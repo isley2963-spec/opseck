@@ -1,0 +1,8 @@
+NAME="Zombie OS"
+PRETTY_NAME="Zombie OS"
+ID=zombieos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;155;255;58"
+HOME_URL="https://github.com/isley2963-spec/zombie"
+LOGO=zombie-os

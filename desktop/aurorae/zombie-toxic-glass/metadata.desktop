@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=Zombie Toxic Glass
+Comment=Frosted glass decoration with mac-style traffic-light controls
+X-KDE-PluginInfo-Name=zombie-toxic-glass
+X-KDE-PluginInfo-Author=Zombie OS
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-Website=https://github.com/isley2963-spec/zombie
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-License=MIT

@@ -1,0 +1,49 @@
+name: Build Zombie OS ISO
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    container:
+      image: archlinux:latest
+      options: --privileged
+
+    steps:
+      - name: Install base tools
+        run: pacman -Syu --noconfirm --needed git
+
+      - uses: actions/checkout@v4
+
+      - name: Build Calamares package
+        run: bash build-calamares.sh
+
+      - name: Build ISO
+        run: bash build.sh
+
+      - name: Verify ISO really is Zombie OS
+        run: bash verify-iso.sh
+
+      - name: Checksums
+        run: |
+          cd out
+          sha256sum zombie-os-*.iso > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Upload ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: zombie-os-iso
+          path: |
+            out/zombie-os-*.iso
+            out/SHA256SUMS
+          retention-days: 14
+          compression-level: 0
+          if-no-files-found: error

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <g id="decoration-top">
+    <rect x="0" y="0" width="64" height="64" fill="#101812" fill-opacity="0.72"/>
+    <rect x="0" y="62" width="64" height="1" fill="#9BFF3A" fill-opacity="0.32"/>
+  </g>
+  <g id="decoration-left"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="decoration-right"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="decoration-bottom"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="decoration-topleft"><rect x="0" y="0" width="64" height="64" fill="#101812" fill-opacity="0.72"/></g>
+  <g id="decoration-topright"><rect x="0" y="0" width="64" height="64" fill="#101812" fill-opacity="0.72"/></g>
+  <g id="decoration-bottomleft"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="decoration-bottomright"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="decoration-center"><rect x="0" y="0" width="64" height="64" fill="#080C09" fill-opacity="0.96"/></g>
+  <g id="mask"><rect x="0" y="0" width="64" height="64" fill="#fff"/></g>
+</svg>

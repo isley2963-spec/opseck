@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+current="$(kreadconfig6 --file kdeglobals --group General --key ColorScheme 2>/dev/null || true)"
+if [[ "$current" == "Zombie OS Dark" ]]; then
+  next="Zombie OS Light"
+else
+  next="Zombie OS Dark"
+fi
+plasma-apply-colorscheme "$next"
+notify-send "Zombie OS" "Switched to ${next#Zombie OS } mode"

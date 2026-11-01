@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Install Zombie OS
+Comment=Install Zombie OS to this computer
+Exec=sudo /usr/bin/calamares
+Icon=system-software-install
+Terminal=false
+Categories=System;

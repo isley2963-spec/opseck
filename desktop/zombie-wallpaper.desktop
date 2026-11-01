@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Set Zombie OS Wallpaper
+Exec=/usr/bin/plasma-apply-wallpaperimage "/usr/share/wallpapers/Zombie OS/wallpaper.svg"
+OnlyShowIn=KDE;
+X-KDE-autostart-after=panel

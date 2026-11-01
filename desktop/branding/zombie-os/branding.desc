@@ -1,0 +1,9 @@
+componentName: zombie-os
+welcomeStyle: Classic
+strings:
+  productName: Zombie OS
+  shortProductName: Zombie OS
+  version: Stage 2
+  shortVersion: 2
+  bootloaderEntryName: Zombie OS
+  productUrl: https://github.com/isley2963-spec/zombie

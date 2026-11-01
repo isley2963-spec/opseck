@@ -1,0 +1,27 @@
+# Live desktop and core hardware support.
+plasma-meta
+aurorae
+konsole
+dolphin
+firefox
+sddm
+polkit
+xorg-server
+networkmanager
+pipewire
+pipewire-audio
+pipewire-pulse
+wireplumber
+qt6-wayland
+mesa
+sudo
+libnotify
+grub
+efibootmgr
+squashfs-tools
+# Graphical installer (built from the Arch User Repository by the workflow).
+calamares
+# Boot and branding.
+plymouth
+fastfetch
+nftables

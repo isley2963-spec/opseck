@@ -1,0 +1,16 @@
+[General]
+ColorScheme=Zombie OS Dark
+Name=Zombie OS
+widgetStyle=Breeze
+
+[KDE]
+LookAndFeelPackage=org.kde.breeze.desktop
+contrast=4
+
+[WM]
+activeBackground=16,24,18
+activeBlend=232,245,224
+activeForeground=232,245,224
+inactiveBackground=8,12,9
+inactiveBlend=143,163,138
+inactiveForeground=143,163,138

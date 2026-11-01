@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#9BFF3A" stop-opacity=".26"/><stop offset="1" stop-color="#9BFF3A" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080C09"/><stop offset="1" stop-color="#101812"/></linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#9BFF3A" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <ellipse cx="1440" cy="430" rx="620" ry="600" fill="url(#glow)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <circle cx="1440" cy="430" r="278" fill="#080C09" fill-opacity=".42" stroke="#9BFF3A" stroke-opacity=".22" stroke-width="2"/>
+  <path d="m1440 230 181 315h-362z" fill="none" stroke="#9BFF3A" stroke-opacity=".64" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="1440" cy="430" r="66" fill="none" stroke="#9BFF3A" stroke-opacity=".78" stroke-width="14"/>
+  <path d="M1418 363h44l-11 54h28l-55 80 15-57h-31z" fill="#9BFF3A"/>
+  <text x="160" y="486" fill="#E8F5E0" font-family="sans-serif" font-size="92" font-weight="700" letter-spacing="12">ZOMBIE OS</text>
+  <text x="166" y="552" fill="#9BFF3A" font-family="sans-serif" font-size="22" letter-spacing="8">TOXIC GLASS  ·  ARCH LINUX</text>
+  <path d="M164 601h420" stroke="#9BFF3A" stroke-opacity=".65" stroke-width="2"/>
+</svg>

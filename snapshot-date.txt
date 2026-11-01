@@ -1,0 +1,4 @@
+# Pin the build to a dated Arch Linux Archive snapshot so every build uses the
+# exact same package versions. Format: YYYY/MM/DD  (example: 2026/11/01)
+# Leave this file with only comments to build from the current mirrors.
+# Tip: after a build boots fine, put that day's date here to freeze it.

@@ -1,0 +1,12 @@
+[Unit]
+Description=Create the temporary Zombie OS live desktop account
+Before=display-manager.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c 'getent passwd zombie >/dev/null || useradd --create-home --shell /bin/bash --groups wheel,audio,video,storage,power zombie; passwd -d zombie'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

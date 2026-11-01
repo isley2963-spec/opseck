@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Zombie OS
+Description=Radioactive boot splash for Zombie OS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/zombie-os
+ScriptFile=/usr/share/plymouth/themes/zombie-os/zombie-os.script

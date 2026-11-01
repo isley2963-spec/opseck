@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="active-center"><circle cx="12" cy="12" r="7.4" fill="#9BFF3A" stroke="#4C9D1B" stroke-opacity=".8" stroke-width=".7"/></g>
+  <g id="inactive-center"><circle cx="12" cy="12" r="7.4" fill="#9BFF3A" fill-opacity=".62" stroke="#4C9D1B" stroke-opacity=".5" stroke-width=".7"/></g>
+  <g id="hover-center"><circle cx="12" cy="12" r="7.8" fill="#B5FF69" stroke="#4C9D1B" stroke-width=".7"/><path d="M9.4 10.4h4.8v4.8H9.4zM10.8 9h4.1v4.1" fill="none" stroke="#315D14" stroke-linejoin="round" stroke-width="1.05"/></g>
+  <g id="pressed-center"><circle cx="12" cy="12" r="6.9" fill="#78CF24" stroke="#3E8117" stroke-width=".7"/></g>
+  <g id="deactivated-center"><circle cx="12" cy="12" r="7.4" fill="#596C49" fill-opacity=".52"/></g>
+</svg>

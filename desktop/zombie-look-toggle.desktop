@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Toggle Zombie OS Light/Dark Mode
+Comment=Switch between Toxic Glass dark and light colors
+Exec=/usr/local/bin/zombie-look-toggle
+Icon=preferences-desktop-theme-global
+Terminal=false
+Categories=Settings;DesktopSettings;
