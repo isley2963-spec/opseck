@@ -28,7 +28,7 @@ else
 fi
 
 step "Installing archiso"
-pacman -Syyuu --noconfirm --needed archiso
+pacman -Syyuu --noconfirm --needed archiso mkinitcpio
 
 [[ -d /usr/share/archiso/configs/releng ]] || die "archiso releng profile not found"
 

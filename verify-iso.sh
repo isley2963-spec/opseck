@@ -75,7 +75,7 @@ grep -q '^Theme=zombie-os' "$TMP/plymouthd.conf" || fail "Plymouth theme not sel
 ok "Plymouth theme selected"
 
 bsdtar -C "$TMP" -xf "$ISO" arch/boot/x86_64/initramfs-linux.img || fail "initramfs missing from ISO"
-bsdtar -tf "$TMP/arch/boot/x86_64/initramfs-linux.img" > "$TMP/initramfs-list.txt" || fail "cannot inspect initramfs contents"
+lsinitcpio "$TMP/arch/boot/x86_64/initramfs-linux.img" > "$TMP/initramfs-list.txt"
 grep -q 'plymouth' "$TMP/initramfs-list.txt" || fail "plymouth is not inside the initramfs"
 grep -q 'themes/zombie-os' "$TMP/initramfs-list.txt" || fail "Zombie OS theme is not inside the initramfs"
 ok "initramfs contains plymouth and the Zombie OS theme"
