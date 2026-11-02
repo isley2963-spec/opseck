@@ -69,7 +69,7 @@ mkdir -p "$PROFILE/airootfs/etc/calamares/modules" \
   "$PROFILE/airootfs/usr/share/wallpapers/Zombie OS" \
   "$PROFILE/airootfs/usr/local/bin" \
   "$PROFILE/airootfs/usr/share/applications" \
-  "$PROFILE/airootfs/etc/sudoers.d" \
+  "$PROFILE/airootfs/etc/sudoers.d" "$PROFILE/airootfs/etc/xdg" \
   "$PROFILE/airootfs/etc/skel/.config" \
   "$PROFILE/airootfs/etc/skel/.config/autostart" \
   "$PROFILE/airootfs/etc/skel/Desktop"
