@@ -77,6 +77,8 @@ cp -r "$REPO/calamares/." "$PROFILE/airootfs/etc/calamares/"
 mkdir -p "$PROFILE/airootfs/etc/calamares/branding/zombie-os"
 cp "$REPO/desktop/branding/zombie-os/branding.desc" \
   "$PROFILE/airootfs/etc/calamares/branding/zombie-os/branding.desc"
+cp "$REPO/desktop/branding/zombie-os/show.qml" \
+  "$PROFILE/airootfs/etc/calamares/branding/zombie-os/show.qml"
 cp "$REPO/desktop/Zombie-OS-Dark.colors" "$PROFILE/airootfs/usr/share/color-schemes/"
 cp "$REPO/desktop/Zombie-OS-Light.colors" "$PROFILE/airootfs/usr/share/color-schemes/"
 cp "$REPO/desktop/wallpaper.svg" "$PROFILE/airootfs/usr/share/wallpapers/Zombie OS/wallpaper.svg"

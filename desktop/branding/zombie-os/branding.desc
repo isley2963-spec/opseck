@@ -7,3 +7,4 @@ strings:
   shortVersion: 2
   bootloaderEntryName: Zombie OS
   productUrl: https://github.com/isley2963-spec/zombie
+slideshow: "show.qml"
