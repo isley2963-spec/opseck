@@ -1,5 +1,5 @@
 componentName: zombie-os
-welcomeStyle: Classic
+welcomeStyleCalamares: false
 strings:
   productName: Zombie OS
   shortProductName: Zombie OS
@@ -7,4 +7,6 @@ strings:
   shortVersion: 2
   bootloaderEntryName: Zombie OS
   productUrl: https://github.com/isley2963-spec/zombie
+images: {}
 slideshow: "show.qml"
+style: {}
