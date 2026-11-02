@@ -34,6 +34,7 @@ for f in \
   etc/fastfetch/config.jsonc \
   etc/calamares/settings.conf \
   etc/calamares/modules/unpackfs.conf \
+  etc/calamares/modules/installkernel.conf \
   etc/calamares/branding/zombie-os/branding.desc \
   etc/xdg/kwinrc \
   usr/bin/calamares \
@@ -56,6 +57,7 @@ ok "boot theme, desktop, installer, and fastfetch assets present"
 unsquashfs -cat "$SFS" etc/calamares/settings.conf > "$TMP/calamares-settings.conf" || fail "cannot read Calamares settings"
 grep -q 'branding: zombie-os' "$TMP/calamares-settings.conf" || fail "Calamares is not using Zombie OS branding"
 grep -q 'shellprocess@livecleanup' "$TMP/calamares-settings.conf" || fail "Calamares live-system cleanup is not configured"
+grep -q 'shellprocess@installkernel' "$TMP/calamares-settings.conf" || fail "Calamares kernel install step is not configured"
 unsquashfs -cat "$SFS" etc/calamares/branding/zombie-os/branding.desc > "$TMP/branding.desc" || fail "cannot read Calamares branding config"
 grep -q '^images: {}$' "$TMP/branding.desc" || fail "Calamares branding images map is missing"
 grep -q '^style: {}$' "$TMP/branding.desc" || fail "Calamares branding style map is missing"
@@ -79,6 +81,9 @@ unsquashfs -cat "$SFS" etc/plymouth/plymouthd.conf > "$TMP/plymouthd.conf" || fa
 grep -q '^Theme=zombie-os' "$TMP/plymouthd.conf" || fail "Plymouth theme not selected"
 ok "Plymouth theme selected"
 
+bsdtar -xOf "$ISO" arch/boot/x86_64/vmlinuz-linux > "$TMP/vmlinuz-linux" || fail "kernel image missing from ISO"
+[[ -s "$TMP/vmlinuz-linux" ]] || fail "kernel image is empty"
+ok "kernel image available for installed system"
 bsdtar -C "$TMP" -xf "$ISO" arch/boot/x86_64/initramfs-linux.img || fail "initramfs missing from ISO"
 lsinitcpio "$TMP/arch/boot/x86_64/initramfs-linux.img" > "$TMP/initramfs-list.txt"
 grep -q 'plymouth' "$TMP/initramfs-list.txt" || fail "plymouth is not inside the initramfs"
