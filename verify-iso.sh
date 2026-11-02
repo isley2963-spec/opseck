@@ -80,9 +80,9 @@ grep -q 'plymouth' "$TMP/initramfs-list.txt" || fail "plymouth is not inside the
 grep -q 'themes/zombie-os' "$TMP/initramfs-list.txt" || fail "Zombie OS theme is not inside the initramfs"
 ok "initramfs contains plymouth and the Zombie OS theme"
 
-bsdtar -xOf "$ISO" boot/grub/grub.cfg > "$TMP/grub.cfg" || fail "grub.cfg missing from ISO"
-grep -q 'Zombie OS' "$TMP/grub.cfg" || fail "GRUB menu is not branded"
-grep -q 'quiet splash' "$TMP/grub.cfg" || fail "GRUB entries lack quiet splash"
+bsdtar -xOf "$ISO" boot/syslinux/archiso_sys-linux.cfg > "$TMP/syslinux.cfg" || fail "Syslinux boot menu missing from ISO"
+grep -q 'Zombie OS' "$TMP/syslinux.cfg" || fail "Syslinux menu is not branded"
+grep -q 'quiet splash' "$TMP/syslinux.cfg" || fail "Syslinux entries lack quiet splash"
 ok "boot menu branded, quiet splash enabled"
 
 echo "ALL CHECKS PASSED"
