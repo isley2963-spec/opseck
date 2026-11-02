@@ -22,5 +22,5 @@ shopt -s nullglob
 packages=("$BUILD_DIR"/calamares/*.pkg.tar.zst)
 (( ${#packages[@]} > 0 )) || { echo "AUR build produced no package." >&2; exit 1; }
 cp "${packages[@]}" "$PKG_REPO/"
-repo-add "$PKG_REPO/calamares.db.tar.gz" "$PKG_REPO"/*.pkg.tar.zst
+repo-add "$PKG_REPO/zombie-local.db.tar.gz" "$PKG_REPO"/*.pkg.tar.zst
 echo "Calamares package repository ready: $PKG_REPO"

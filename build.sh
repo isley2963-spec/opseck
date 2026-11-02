@@ -46,7 +46,7 @@ grep -vE '^\s*(#|$)' "$OVERLAY/packages.extra" >> "$PROFILE/packages.x86_64"
 # Calamares is built by the workflow from its AUR recipe and supplied through
 # a temporary, unsigned local repository. No package or signing key is retained.
 LOCAL_REPO="${CALAMARES_REPO:-$REPO/out/calamares-repo}"
-if [[ -f "$LOCAL_REPO/calamares.db.tar.gz" ]]; then
+if [[ -f "$LOCAL_REPO/zombie-local.db.tar.gz" ]]; then
   printf '\n[zombie-local]\nSigLevel = Optional TrustAll\nServer = file://%s\n' "$LOCAL_REPO" >> "$PROFILE/pacman.conf"
 else
   die "Calamares package repo not found at $LOCAL_REPO (run build-calamares.sh first)"
